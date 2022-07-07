@@ -1,32 +1,34 @@
-# oms -- Open MongoDB Scanner
-**oms** Checks the open MongoDB databases without any kind security layer to connect to them. Secure your DB!
+# ods -- Open Datebase Scanner
+**ods** checks for the open database which doesn't have any kind security layer. Secure your DB!
+
+Currently only MongoDB is supported but other database will follow if requested.
 
 ## _This repo exist for educational purpose only. In no way it endorse hacking._ 
 
 ## Usage Example
 
-**Scan all open ports through the internet**
+**Scan all open ports through IPv4 addresses**
 
 ```
-$ oms --cidr=0.0.0.0/0
+$ ods --cidr=0.0.0.0/0
 ```
 
 **Use a custom port for MongoDB**
 
 ```
-$ oms --mongo-port=27018
+$ ods --db-port=27018
 ```
 
-**Use a different MongoDB dialect**
+**Specify the dialect to use. Only `mongodb` and `mongodb+srv` supported.**
 
 ```
-$ oms --mongo-dialect=mongodb+srv
+$ ods --dialect=mongodb+srv
 ```
 
 **Show this help page**
 
 ```
-$ oms --help
+$ ods --help
 ```
 
 ## License

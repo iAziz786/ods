@@ -1,4 +1,4 @@
-module github.com/iAziz786/oms
+module github.com/iAziz786/ods
 
 go 1.18
 
